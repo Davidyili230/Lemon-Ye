@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- metadata, title, linking CSS file -->
-<head>
-  <!-- set character to be able to use any characters -->
-  <meta charset="UTF-8" />
-  
-  <!-- Ensures the page is responsive on all devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Improves compatibility with older versions of Internet Explorer -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  <!-- open graph property title -->
-  <meta content="website-link" property="og:title" />
+    <head>
+        <!-- set character to be able to use any characters -->
+        <meta charset="UTF-8">
+        <!-- Ensures the page is responsive on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Improves compatibility with older versions of Internet Explorer -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- Title shown in the browser tab -->
-  <title>My Website</title>
-  
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="reset.css" />
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="reset.css" type="'text/css">
+        
+        <!-- Title shown in the browser tab -->
+        <title>Lemon Ye</title>
+    </head>
 
-</head>
-<body>
+    <body>
+        <header>
+            <!-- section 1-->
+            <section>
+                <!-- div logo-->
+                <div>
+                    <h1>LEMON YE</h1>
+                </div>
+                <!-- div home/menu button-->
+                <div>
+                    <a href="home.html"><img src="img/home.png" alt="home page" width="25px"></a>
+                    <a href="menu.html"><img src="img/milk-tea.png" alt="home page" width="25px"></a>
+                </div>
+            </section>
+        </header>
 
-  <!-- Page header -->
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
+        <main>
+            <!-- section 1 -->
+            <section>
+                <!-- div video -->
+                <div>
+                    <iframe 
+                    class="full-width-video" 
+                    src="https://www.youtube.com/embed/YFoDjaEqkKo?si=K4TFSEOMSCvdDWrg" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                    </iframe>
+                </div>
+                <!-- div menu button -->
+                <div>
+                    <a href="menu.html"><button>MENU</button></a>
+                </div>
+            </section>
+        </main>
 
-  <!-- Main content section -->
-  <main>
-    <p>This is a simple starter HTML template.</p>
-  </main>
+        <!-- Footer section -->
+        <footer>
+            <a href="menu.html"><img src="img/wechat.png" alt="home page" width="25px" target="_blank"></a>
+            <p>&copy; LEMON YE</p>
+        </footer>
 
-  <!-- Footer section -->
-  <footer>
-    <p>&copy; 2025 My Website</p>
-  </footer>
-
-  <!-- Link to external JavaScript file -->
-  <script src="script.js"></script>
-</body>
+    <!-- Link to external JavaScript file -->
+    <script> src="script.js"</script>
+    </body>
 </html>
