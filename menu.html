@@ -13,28 +13,35 @@
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="stylesheet" href="reset.css" type="'text/css">
         
-        <!-- Title shown in the browser tab -->
+        <!-- Title shown in athe browser tab -->
         <title>Lemon Ye</title>
     </head>
 
     <body>
         <header>
             <!-- section 1-->
-            <section>
+            <section class="navigation-bar">
                 <!-- div logo-->
-                <div>
+                <div class="nav-left">
                     <h1>LEMON YE</h1>
                 </div>
                 <!-- div home/menu button-->
-                <div>
-                    <a href="home.html"><img src="img/home.png" alt="home page" width="25px"></a>
+                <div class="nav-right">
+                    <a href="index.html"><img src="img/home.png" alt="home page" width="25px"></a>
                     <a href="menu.html"><img src="img/milk-tea.png" alt="home page" width="25px"></a>
+                    <button class="home-menu" id="home-menu"><img src="img/menu.png" alt="menu bar" width="25px"></button>
                 </div>
             </section>
+            <div>
+                <nav class="home-menu-scroll" id="home-menu-scroll">
+                    <button onclick="scrollToSection('our-story')" aria-label="Scroll to our story section">Our Story</button>
+                    <button onclick="scrollToSection('signature-drink')" aria-label="Scroll to signature drink section"> Signature Drinks</button>
+                </nav>
+            </div>
         </header>
 
         <main>
-            <!-- section 1 -->
+            <!-- section: video and menu button -->
             <section>
                 <!-- div video -->
                 <div>
@@ -48,19 +55,48 @@
                     </iframe>
                 </div>
                 <!-- div menu button -->
-                <div>
+                <div  class="button-border" id="home-to-menu-button">
                     <a href="menu.html"><button>MENU</button></a>
+                </div>
+            </section>
+            
+            <!-- section: our story-->
+            <section class="section-container" id="our-story">
+                <!-- div our story-->
+                <div>
+                    <h2>OUR STORY</h2>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati aut atque sed non, neque nam maiores quaerat dolorem, delectus id rem qui eum eius nulla sit corporis fuga dolores?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nisi vero sit in fuga veniam. Exercitationem, ex eaque in iste recusandae excepturi dolorum numquam enim dolor, aliquam, temporibus esse aspernatur!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione voluptas, eveniet explicabo voluptate illum incidunt dolores quam cumque. Dolore, fuga temporibus perspiciatis corrupti impedit odio asperiores expedita non ab delectus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quia esse. Consequatur unde accusamus incidunt dolore ullam reiciendis mollitia facilis quaerat, explicabo repudiandae vel asperiores. Recusandae dolorem eos animi eaque?</p>
+                </div>
+            </section>
+            <!-- section: signature drinks-->
+            <section class="section-container" id="signature-drink">
+                <div>
+                    <h2>SIGNATURE DRINKS</h2>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias asperiores nihil, animi maiores amet quos magni culpa harum! Ipsa nemo alias incidunt, tempora cupiditate minus saepe magnam vitae quisquam nam?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora deleniti, assumenda deserunt alias corporis eius, illum quos repellendus quam voluptate! Ab placeat autem veritatis, enim voluptates eos eius in!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nostrum suscipit enim eligendi eius architecto dignissimos nemo esse, dicta quaerat dolorem quo similique aspernatur obcaecati aperiam cumque earum facere reiciendis?</p>
                 </div>
             </section>
         </main>
 
         <!-- Footer section -->
         <footer>
-            <a href="menu.html"><img src="img/wechat.png" alt="home page" width="25px" target="_blank"></a>
-            <p>&copy; LEMON YE</p>
+            <div class="social-media-icon">
+                <a href=""><img src="img/wechat.png" alt="wechat" width="30px" target="_blank"></a>
+            </div>
+            <div>
+                <p>&copy; 2025 LEMON YE. All Rights Reserved.</p>
+            </div>
         </footer>
 
     <!-- Link to external JavaScript file -->
-    <script> src="script.js"</script>
+    <script src="script.js"></script>
     </body>
 </html>
