@@ -29,14 +29,15 @@
                 <div class="nav-right">
                     <a href="index.html"><img src="img/home.png" alt="home page" width="25px"></a>
                     <a href="menu.html"><img src="img/milk-tea.png" alt="home page" width="25px"></a>
-                    <div class="home-menu" id="home-menu">&#9776;</div>
-                        <nav class="home-menu-scroll" id="home-menu-scroll">
-                            <button onclick="scrollToSection('our-story')" aria-label="Scroll to our story section">Our Story</button>
-                            <button onclick="scrollToSection('signature-drink')" aria-label="Scroll to signature drink section"> Signature Drinks</button>
-                        </nav>
-                    </div>
+                    <button class="home-menu" id="home-menu"><img src="img/menu.png" alt="menu bar" width="25px"></button>
                 </div>
             </section>
+            <div>
+                <nav class="home-menu-scroll" id="home-menu-scroll">
+                    <button onclick="scrollToSection('our-story')" aria-label="Scroll to our story section">Our Story</button>
+                    <button onclick="scrollToSection('signature-drink')" aria-label="Scroll to signature drink section"> Signature Drinks</button>
+                </nav>
+            </div>
         </header>
 
         <main>
@@ -54,13 +55,13 @@
                     </iframe>
                 </div>
                 <!-- div menu button -->
-                <div id="home-to-menu-button">
+                <div  class="button-border" id="home-to-menu-button">
                     <a href="menu.html"><button>MENU</button></a>
                 </div>
             </section>
             
             <!-- section: our story-->
-            <sectixon id="our-story">
+            <section class="section-container" id="our-story">
                 <!-- div our story-->
                 <div>
                     <h2>OUR STORY</h2>
@@ -73,7 +74,7 @@
                 </div>
             </section>
             <!-- section: signature drinks-->
-            <section id="signature-drink">
+            <section class="section-container" id="signature-drink">
                 <div>
                     <h2>SIGNATURE DRINKS</h2>
                 </div>
@@ -87,8 +88,12 @@
 
         <!-- Footer section -->
         <footer>
-            <a href=""><img src="img/wechat.png" alt="wechat" width="25px" target="_blank"></a>
-            <p>&copy; 2025 LEMON YE. All Rights Reserved.</p>
+            <div class="social-media-icon">
+                <a href=""><img src="img/wechat.png" alt="wechat" width="30px" target="_blank"></a>
+            </div>
+            <div>
+                <p>&copy; 2025 LEMON YE. All Rights Reserved.</p>
+            </div>
         </footer>
 
     <!-- Link to external JavaScript file -->
