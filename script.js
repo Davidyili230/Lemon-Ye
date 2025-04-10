@@ -4,7 +4,7 @@
 
 function scrollToSection(id) {
     const element = document.getElementById(id);
-    const yOffset = -70; // height of your navbar
+    const yOffset = -80; // height of your navbar
     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({ top: y, behavior: 'smooth' });
