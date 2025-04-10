@@ -30,43 +30,18 @@ button {
 main {
     padding-top: 60px;
 }
-aside {
-    width: 25%;
-    background-color: azure;
-    border-left: 2px solid #ccc;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 70px; /* push below header */
-}
 
-aside nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-aside button {
-    display: flex;
-    padding: 10px;
-    border: none;
-    background-color:azure;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 13px;
-}
 
-aside button:hover {
-    background-color: #fcd34d;
-}
 /*
     classes
 */
 
+
 .social-media-icon {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 10px;
     opacity: 0.5;
 }
@@ -80,19 +55,6 @@ aside button:hover {
     border: 1px; /* border 1 px */
     gap: 10px;
     border-style: double; /* border style: line */
-}
-
-.section-container-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 5px; /* margin 50px */
-    padding: 10px; /* padding 30px */
-    border: 1px; /* border 1 px */
-    gap: 10px;
-    border-style: double; /* border style: line */
-    width: 70%;
-    z-index: 999;
 }
 
 .button-border {
@@ -154,6 +116,48 @@ aside button:hover {
     height: auto;   
     max-width: 100%;
 }
+
+.menu-page {
+    display: flex;
+    padding-top: 60px;
+}
+
+.menu-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-style: solid;
+    align-items: center;
+}
+
+.left {
+    width: 80%;
+    overflow-y: auto;
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+    gap: 30px; /* Reduced gap between items */
+}
+
+.left .item {
+    text-align: center;
+}
+
+.left h2 {
+    margin-bottom: 10px; /* Add space below the h2 to separate it from the content */
+}
+
+.right {
+    width: 20%;
+    align-items: center;
+    background-color: azure;
+    position: fixed;
+    right: 0;
+    height: (menu-page-container); /* full height minus top offset */
+    overflow-y: auto; /* scrolls if content exceeds height */
+}
+
+
+
 
 /*
     identifiers
