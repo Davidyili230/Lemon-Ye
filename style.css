@@ -31,8 +31,6 @@ main {
     padding-top: 60px;
 }
 
-
-
 /*
     classes
 */
@@ -102,12 +100,12 @@ main {
     overflow: hidden;
     width: 100%;
     background-color:azure; /* Light background color for navbar */
-    margin-top: 45px;
     margin-left: -8px;
 }
 
 .home-menu-scroll.active {
     display: flex; /* Show when active */
+    padding-top: 60px;
 }
 
 .full-width-video { /*make video fit in any screen width*/

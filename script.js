@@ -2,14 +2,14 @@
 //      This function scrolls the page to the given section ID
 //
 
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId); // Use the correct sectionId
-    if (section) {
-        section.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to section
-    } else {
-        console.log("Section not found: " + sectionId); // Debugging line
-    }
+function scrollToSection(id) {
+    const element = document.getElementById(id);
+    const yOffset = -70; // height of your navbar
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
 }
+
 
 //
 //      scroll to section about
