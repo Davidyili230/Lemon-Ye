@@ -126,8 +126,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 80%;
-    border: 1px;
-    border-style: solid;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -175,6 +173,14 @@ main {
     font-size: 25px;
     font-weight: bold;
     text-decoration: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 /*
