@@ -133,11 +133,15 @@ main {
 .menu-button {
     font-size: 20px;
     color: black;
-    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px;
+    border-left-style: solid;
 }
 
 .menu-button:hover {
     font-weight: bold;
+    border: 10px;
 }
 
 .left {
